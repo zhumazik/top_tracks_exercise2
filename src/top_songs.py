@@ -49,4 +49,4 @@ def get_top_10_tracks(session_df: DataFrame, top_sessions: Set[str]) -> DataFram
     return top_10_tracks
 
 def write_df_to_tsv(df: DataFrame, output_path: str) -> None:
-    df.write.option("delimiter", "\t").csv(output_path)
+    df.write.option("delimiter", "\t").option("header", True).mode("overwrite").csv(output_path)
