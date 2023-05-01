@@ -4,7 +4,7 @@ from top_songs import *
 
 data_folder = 'mnt/'
 input_fie = data_folder + 'userid-timestamp-artid-artname-traid-traname.tsv'
-output_file = data_folder + 'result.csv'
+output_file = data_folder + 'result.tsv'
 
 
 sc = SparkSession\

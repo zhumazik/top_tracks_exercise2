@@ -27,7 +27,6 @@ def read_data (sc: SparkSession, input_file: str) -> DataFrame:
     df = sc.read.csv(input_file, sep=r'\t', header=False, schema=schema)
     return df
 
-
 def get_df_with_generated_sessions(df: DataFrame) -> DataFrame:
     windowSpec  = Window.partitionBy("user_id").orderBy("timestamp")  
     df = df.withColumn("prev_timestamp", F.lag("timestamp",1).over(windowSpec))
