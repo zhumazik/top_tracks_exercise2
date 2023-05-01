@@ -1,5 +1,5 @@
 /.vscode
-/data/*
+/data/userid-timestamp-artid-artname-traid-traname.tsv
 /.metals
 /src/__pycache__
 .DS_Store
