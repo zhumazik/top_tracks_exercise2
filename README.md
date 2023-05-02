@@ -13,7 +13,7 @@
 
 ## Things to improve
 
-1) Logging
-2) Unit testing
-3) Data validation (e.g. schema validation)
+1) Add Logging
+2) Ad Unit testing
+3) Add Data validation (e.g. schema validation)
 4) Perfomance tuning (e.g. "int" data type for column "global_session_id")
